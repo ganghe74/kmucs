@@ -1,0 +1,702 @@
+
+Sparse Matrix a, Row major order
+0 2 0 
+1 0 5 
+3 2 0 
+
+Sparse Matrix a, Column major order
+0 1 3 
+2 0 2 
+0 5 0 
+
+Sparse Matrix b, Row major order
+1 0 0 
+1 0 0 
+2 4 0 
+
+Sparse Matrix b, Column major order
+1 1 2 
+0 0 4 
+0 0 0 
+
+Sparse Matrix c = a + b, Row major order
+1 2 0 
+2 0 5 
+5 6 0 
+
+Sparse Matrix c = a + b, Column major order
+1 2 5 
+2 0 6 
+0 5 0 
+
+new value: 1 1 8 
+
+Sparse Matrix new C, Row major Order 
+8 2 0 
+2 0 5 
+5 6 0 
+
+Sparse Matrix new C, Column major Order
+8 2 5 
+2 0 6 
+0 5 0 
+
+new value: 1 2 0 
+
+Sparse Matrix new C, Row major Order 
+8 0 0 
+2 0 5 
+5 6 0 
+
+Sparse Matrix new C, Column major Order
+8 2 5 
+0 0 6 
+0 5 0 
+
+new value: 1 3 8 
+Not Existing Element 1 3
+
+Sparse Matrix new C, Row major Order 
+8 0 8 
+2 0 5 
+5 6 0 
+
+Sparse Matrix new C, Column major Order
+8 2 5 
+0 0 6 
+8 5 0 
+
+new value: 2 1 8 
+
+Sparse Matrix new C, Row major Order 
+8 0 8 
+8 0 5 
+5 6 0 
+
+Sparse Matrix new C, Column major Order
+8 8 5 
+0 0 6 
+8 5 0 
+
+new value: 2 2 0 
+Not Existing Element 2 2
+
+Sparse Matrix new C, Row major Order 
+8 0 8 
+8 0 5 
+5 6 0 
+
+Sparse Matrix new C, Column major Order
+8 8 5 
+0 0 6 
+8 5 0 
+
+new value: 2 3 8 
+
+Sparse Matrix new C, Row major Order 
+8 0 8 
+8 0 8 
+5 6 0 
+
+Sparse Matrix new C, Column major Order
+8 8 5 
+0 0 6 
+8 8 0 
+
+new value: 3 1 8 
+
+Sparse Matrix new C, Row major Order 
+8 0 8 
+8 0 8 
+8 6 0 
+
+Sparse Matrix new C, Column major Order
+8 8 8 
+0 0 6 
+8 8 0 
+
+new value: 3 2 0 
+
+Sparse Matrix new C, Row major Order 
+8 0 8 
+8 0 8 
+8 0 0 
+
+Sparse Matrix new C, Column major Order
+8 8 8 
+0 0 0 
+8 8 0 
+
+new value: 3 3 8 
+Not Existing Element 3 3
+
+Sparse Matrix new C, Row major Order 
+8 0 8 
+8 0 8 
+8 0 8 
+
+Sparse Matrix new C, Column major Order
+8 8 8 
+0 0 0 
+8 8 8 
+
+Sparse Matrix a, Row major order
+0 0 0 0 
+1 0 5 0 
+0 0 0 2 
+3 0 0 0 
+
+Sparse Matrix a, Column major order
+0 1 0 3 
+0 0 0 0 
+0 5 0 0 
+0 0 2 0 
+
+Sparse Matrix b, Row major order
+1 0 5 0 
+0 0 0 0 
+0 0 0 0 
+3 2 0 0 
+
+Sparse Matrix b, Column major order
+1 0 0 3 
+0 0 0 2 
+5 0 0 0 
+0 0 0 0 
+
+Sparse Matrix c = a + b, Row major order
+1 0 5 0 
+1 0 5 0 
+0 0 0 2 
+6 2 0 0 
+
+Sparse Matrix c = a + b, Column major order
+1 1 0 6 
+0 0 0 2 
+5 5 0 0 
+0 0 2 0 
+
+new value: 1 1 8 
+
+Sparse Matrix new C, Row major Order 
+8 0 5 0 
+1 0 5 0 
+0 0 0 2 
+6 2 0 0 
+
+Sparse Matrix new C, Column major Order
+8 1 0 6 
+0 0 0 2 
+5 5 0 0 
+0 0 2 0 
+
+new value: 1 2 0 
+Not Existing Element 1 2
+
+Sparse Matrix new C, Row major Order 
+8 0 5 0 
+1 0 5 0 
+0 0 0 2 
+6 2 0 0 
+
+Sparse Matrix new C, Column major Order
+8 1 0 6 
+0 0 0 2 
+5 5 0 0 
+0 0 2 0 
+
+new value: 2 2 3 
+Not Existing Element 2 2
+
+Sparse Matrix new C, Row major Order 
+8 0 5 0 
+1 3 5 0 
+0 0 0 2 
+6 2 0 0 
+
+Sparse Matrix new C, Column major Order
+8 1 0 6 
+0 3 0 2 
+5 5 0 0 
+0 0 2 0 
+
+new value: 2 4 7 
+Not Existing Element 2 4
+
+Sparse Matrix new C, Row major Order 
+8 0 5 0 
+1 3 5 7 
+0 0 0 2 
+6 2 0 0 
+
+Sparse Matrix new C, Column major Order
+8 1 0 6 
+0 3 0 2 
+5 5 0 0 
+0 7 2 0 
+
+new value: 3 3 8 
+Not Existing Element 3 3
+
+Sparse Matrix new C, Row major Order 
+8 0 5 0 
+1 3 5 7 
+0 0 8 2 
+6 2 0 0 
+
+Sparse Matrix new C, Column major Order
+8 1 0 6 
+0 3 0 2 
+5 5 8 0 
+0 7 2 0 
+
+new value: 3 4 0 
+
+Sparse Matrix new C, Row major Order 
+8 0 5 0 
+1 3 5 7 
+0 0 8 0 
+6 2 0 0 
+
+Sparse Matrix new C, Column major Order
+8 1 0 6 
+0 3 0 2 
+5 5 8 0 
+0 7 0 0 
+
+new value: 3 2 8 
+Not Existing Element 3 2
+
+Sparse Matrix new C, Row major Order 
+8 0 5 0 
+1 3 5 7 
+0 8 8 0 
+6 2 0 0 
+
+Sparse Matrix new C, Column major Order
+8 1 0 6 
+0 3 8 2 
+5 5 8 0 
+0 7 0 0 
+
+new value: 4 1 8 
+
+Sparse Matrix new C, Row major Order 
+8 0 5 0 
+1 3 5 7 
+0 8 8 0 
+8 2 0 0 
+
+Sparse Matrix new C, Column major Order
+8 1 0 8 
+0 3 8 2 
+5 5 8 0 
+0 7 0 0 
+
+new value: 4 4 0 
+Not Existing Element 4 4
+
+Sparse Matrix new C, Row major Order 
+8 0 5 0 
+1 3 5 7 
+0 8 8 0 
+8 2 0 0 
+
+Sparse Matrix new C, Column major Order
+8 1 0 8 
+0 3 8 2 
+5 5 8 0 
+0 7 0 0 
+
+Sparse Matrix a, Row major order
+0 2 0 0 0 3 2 0 0 0 4 1 2 3 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 3 4 0 0 0 0 1 2 3 1 0 0 1 2 
+4 3 0 1 2 1 1 0 3 2 0 4 1 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 3 0 0 0 2 1 0 1 4 0 0 0 0 0 
+0 0 4 3 0 2 1 1 0 1 0 0 2 0 3 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 2 3 1 1 2 0 0 0 1 3 2 4 0 
+0 1 0 0 2 1 3 2 1 0 4 1 2 3 0 
+
+Sparse Matrix a, Column major order
+0 0 0 0 0 4 0 1 0 1 0 0 
+2 0 1 0 3 3 0 3 0 0 0 1 
+0 0 0 0 4 0 0 0 4 0 2 0 
+0 0 0 0 0 1 0 0 3 0 3 0 
+0 0 0 0 0 2 0 0 0 0 1 2 
+3 0 0 0 0 1 0 2 2 0 1 1 
+2 0 0 0 0 1 0 1 1 0 2 3 
+0 0 0 0 1 0 0 0 1 0 0 2 
+0 0 0 0 2 3 0 1 0 0 0 1 
+0 0 0 0 3 2 0 4 1 0 0 0 
+4 0 0 0 1 0 0 0 0 0 1 4 
+1 0 0 0 0 4 0 0 0 0 3 1 
+2 0 0 0 0 1 0 0 2 0 2 2 
+3 0 0 0 1 0 0 0 0 0 4 3 
+1 2 0 0 2 0 0 0 3 0 0 0 
+
+Sparse Matrix b, Row major order
+2 0 0 0 1 1 2 0 4 0 0 1 0 1 0 
+0 0 2 0 0 3 1 1 0 0 0 0 0 0 2 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4 0 0 0 0 0 1 0 4 0 2 3 0 1 1 
+0 0 0 0 0 3 1 0 0 0 1 4 0 3 1 
+0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+0 0 2 0 0 1 0 0 0 0 0 3 0 4 0 
+0 0 1 0 0 0 0 4 2 0 1 0 0 4 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2 0 0 0 0 4 1 2 0 0 0 0 0 3 0 
+0 0 0 0 0 1 4 3 2 0 1 4 2 0 0 
+
+Sparse Matrix b, Column major order
+2 0 0 4 0 0 0 0 0 1 2 0 
+0 0 0 0 0 0 0 0 0 0 0 0 
+0 2 0 0 0 0 2 1 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 0 0 
+1 3 0 0 3 1 1 0 0 0 4 1 
+2 1 0 1 1 0 0 0 0 0 1 4 
+0 1 0 0 0 0 0 4 0 0 2 3 
+4 0 0 4 0 0 0 2 0 0 0 2 
+0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 2 1 0 0 1 0 0 0 1 
+1 0 0 3 4 0 3 0 0 0 0 4 
+0 0 0 0 0 0 0 0 0 0 0 2 
+1 0 0 1 3 0 4 4 0 0 3 0 
+0 2 0 1 1 0 0 1 2 0 0 0 
+
+Sparse Matrix c = a + b, Row major order
+2 2 0 0 1 4 4 0 4 0 4 2 2 4 1 
+0 0 2 0 0 3 1 1 0 0 0 0 0 0 4 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4 0 0 0 0 0 1 0 4 0 2 3 0 1 1 
+0 3 4 0 0 3 1 1 2 3 2 4 0 4 3 
+4 3 0 1 2 2 1 0 3 2 0 4 1 0 0 
+0 0 2 0 0 1 0 0 0 0 0 3 0 4 0 
+1 3 1 0 0 2 1 4 3 4 1 0 0 4 1 
+0 0 4 3 0 2 1 1 0 1 0 0 2 0 5 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2 0 2 3 1 5 3 2 0 0 1 3 2 7 0 
+0 1 0 0 2 2 7 5 3 0 5 5 4 3 0 
+
+Sparse Matrix c = a + b, Column major order
+2 0 0 4 0 4 0 1 0 2 2 0 
+2 0 1 0 3 3 0 3 0 0 0 1 
+0 2 0 0 4 0 2 1 4 0 2 0 
+0 0 0 0 0 1 0 0 3 0 3 0 
+1 0 0 0 0 2 0 0 0 0 1 2 
+4 3 0 0 3 2 1 2 2 0 5 2 
+4 1 0 1 1 1 0 1 1 0 3 7 
+0 1 0 0 1 0 0 4 1 0 2 5 
+4 0 0 4 2 3 0 3 0 0 0 3 
+0 0 0 0 3 2 0 4 1 0 0 0 
+4 0 0 2 2 0 0 1 0 0 1 5 
+2 0 0 3 4 4 3 0 0 0 3 5 
+2 0 0 0 0 1 0 0 2 0 2 4 
+4 0 0 1 4 0 4 4 0 0 7 3 
+1 4 0 1 3 0 0 1 5 0 0 0 
+
+new value: 1 1 8 
+
+Sparse Matrix new C, Row major Order 
+8 2 0 0 1 4 4 0 4 0 4 2 2 4 1 
+0 0 2 0 0 3 1 1 0 0 0 0 0 0 4 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4 0 0 0 0 0 1 0 4 0 2 3 0 1 1 
+0 3 4 0 0 3 1 1 2 3 2 4 0 4 3 
+4 3 0 1 2 2 1 0 3 2 0 4 1 0 0 
+0 0 2 0 0 1 0 0 0 0 0 3 0 4 0 
+1 3 1 0 0 2 1 4 3 4 1 0 0 4 1 
+0 0 4 3 0 2 1 1 0 1 0 0 2 0 5 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2 0 2 3 1 5 3 2 0 0 1 3 2 7 0 
+0 1 0 0 2 2 7 5 3 0 5 5 4 3 0 
+
+Sparse Matrix new C, Column major Order
+8 0 0 4 0 4 0 1 0 2 2 0 
+2 0 1 0 3 3 0 3 0 0 0 1 
+0 2 0 0 4 0 2 1 4 0 2 0 
+0 0 0 0 0 1 0 0 3 0 3 0 
+1 0 0 0 0 2 0 0 0 0 1 2 
+4 3 0 0 3 2 1 2 2 0 5 2 
+4 1 0 1 1 1 0 1 1 0 3 7 
+0 1 0 0 1 0 0 4 1 0 2 5 
+4 0 0 4 2 3 0 3 0 0 0 3 
+0 0 0 0 3 2 0 4 1 0 0 0 
+4 0 0 2 2 0 0 1 0 0 1 5 
+2 0 0 3 4 4 3 0 0 0 3 5 
+2 0 0 0 0 1 0 0 2 0 2 4 
+4 0 0 1 4 0 4 4 0 0 7 3 
+1 4 0 1 3 0 0 1 5 0 0 0 
+
+new value: 1 8 8 
+Not Existing Element 1 8
+
+Sparse Matrix new C, Row major Order 
+8 2 0 0 1 4 4 8 4 0 4 2 2 4 1 
+0 0 2 0 0 3 1 1 0 0 0 0 0 0 4 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4 0 0 0 0 0 1 0 4 0 2 3 0 1 1 
+0 3 4 0 0 3 1 1 2 3 2 4 0 4 3 
+4 3 0 1 2 2 1 0 3 2 0 4 1 0 0 
+0 0 2 0 0 1 0 0 0 0 0 3 0 4 0 
+1 3 1 0 0 2 1 4 3 4 1 0 0 4 1 
+0 0 4 3 0 2 1 1 0 1 0 0 2 0 5 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2 0 2 3 1 5 3 2 0 0 1 3 2 7 0 
+0 1 0 0 2 2 7 5 3 0 5 5 4 3 0 
+
+Sparse Matrix new C, Column major Order
+8 0 0 4 0 4 0 1 0 2 2 0 
+2 0 1 0 3 3 0 3 0 0 0 1 
+0 2 0 0 4 0 2 1 4 0 2 0 
+0 0 0 0 0 1 0 0 3 0 3 0 
+1 0 0 0 0 2 0 0 0 0 1 2 
+4 3 0 0 3 2 1 2 2 0 5 2 
+4 1 0 1 1 1 0 1 1 0 3 7 
+8 1 0 0 1 0 0 4 1 0 2 5 
+4 0 0 4 2 3 0 3 0 0 0 3 
+0 0 0 0 3 2 0 4 1 0 0 0 
+4 0 0 2 2 0 0 1 0 0 1 5 
+2 0 0 3 4 4 3 0 0 0 3 5 
+2 0 0 0 0 1 0 0 2 0 2 4 
+4 0 0 1 4 0 4 4 0 0 7 3 
+1 4 0 1 3 0 0 1 5 0 0 0 
+
+new value: 1 15 8 
+
+Sparse Matrix new C, Row major Order 
+8 2 0 0 1 4 4 8 4 0 4 2 2 4 8 
+0 0 2 0 0 3 1 1 0 0 0 0 0 0 4 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4 0 0 0 0 0 1 0 4 0 2 3 0 1 1 
+0 3 4 0 0 3 1 1 2 3 2 4 0 4 3 
+4 3 0 1 2 2 1 0 3 2 0 4 1 0 0 
+0 0 2 0 0 1 0 0 0 0 0 3 0 4 0 
+1 3 1 0 0 2 1 4 3 4 1 0 0 4 1 
+0 0 4 3 0 2 1 1 0 1 0 0 2 0 5 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2 0 2 3 1 5 3 2 0 0 1 3 2 7 0 
+0 1 0 0 2 2 7 5 3 0 5 5 4 3 0 
+
+Sparse Matrix new C, Column major Order
+8 0 0 4 0 4 0 1 0 2 2 0 
+2 0 1 0 3 3 0 3 0 0 0 1 
+0 2 0 0 4 0 2 1 4 0 2 0 
+0 0 0 0 0 1 0 0 3 0 3 0 
+1 0 0 0 0 2 0 0 0 0 1 2 
+4 3 0 0 3 2 1 2 2 0 5 2 
+4 1 0 1 1 1 0 1 1 0 3 7 
+8 1 0 0 1 0 0 4 1 0 2 5 
+4 0 0 4 2 3 0 3 0 0 0 3 
+0 0 0 0 3 2 0 4 1 0 0 0 
+4 0 0 2 2 0 0 1 0 0 1 5 
+2 0 0 3 4 4 3 0 0 0 3 5 
+2 0 0 0 0 1 0 0 2 0 2 4 
+4 0 0 1 4 0 4 4 0 0 7 3 
+8 4 0 1 3 0 0 1 5 0 0 0 
+
+new value: 8 1 0 
+
+Sparse Matrix new C, Row major Order 
+8 2 0 0 1 4 4 8 4 0 4 2 2 4 8 
+0 0 2 0 0 3 1 1 0 0 0 0 0 0 4 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4 0 0 0 0 0 1 0 4 0 2 3 0 1 1 
+0 3 4 0 0 3 1 1 2 3 2 4 0 4 3 
+4 3 0 1 2 2 1 0 3 2 0 4 1 0 0 
+0 0 2 0 0 1 0 0 0 0 0 3 0 4 0 
+0 3 1 0 0 2 1 4 3 4 1 0 0 4 1 
+0 0 4 3 0 2 1 1 0 1 0 0 2 0 5 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2 0 2 3 1 5 3 2 0 0 1 3 2 7 0 
+0 1 0 0 2 2 7 5 3 0 5 5 4 3 0 
+
+Sparse Matrix new C, Column major Order
+8 0 0 4 0 4 0 0 0 2 2 0 
+2 0 1 0 3 3 0 3 0 0 0 1 
+0 2 0 0 4 0 2 1 4 0 2 0 
+0 0 0 0 0 1 0 0 3 0 3 0 
+1 0 0 0 0 2 0 0 0 0 1 2 
+4 3 0 0 3 2 1 2 2 0 5 2 
+4 1 0 1 1 1 0 1 1 0 3 7 
+8 1 0 0 1 0 0 4 1 0 2 5 
+4 0 0 4 2 3 0 3 0 0 0 3 
+0 0 0 0 3 2 0 4 1 0 0 0 
+4 0 0 2 2 0 0 1 0 0 1 5 
+2 0 0 3 4 4 3 0 0 0 3 5 
+2 0 0 0 0 1 0 0 2 0 2 4 
+4 0 0 1 4 0 4 4 0 0 7 3 
+8 4 0 1 3 0 0 1 5 0 0 0 
+
+new value: 8 7 8 
+
+Sparse Matrix new C, Row major Order 
+8 2 0 0 1 4 4 8 4 0 4 2 2 4 8 
+0 0 2 0 0 3 1 1 0 0 0 0 0 0 4 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4 0 0 0 0 0 1 0 4 0 2 3 0 1 1 
+0 3 4 0 0 3 1 1 2 3 2 4 0 4 3 
+4 3 0 1 2 2 1 0 3 2 0 4 1 0 0 
+0 0 2 0 0 1 0 0 0 0 0 3 0 4 0 
+0 3 1 0 0 2 8 4 3 4 1 0 0 4 1 
+0 0 4 3 0 2 1 1 0 1 0 0 2 0 5 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2 0 2 3 1 5 3 2 0 0 1 3 2 7 0 
+0 1 0 0 2 2 7 5 3 0 5 5 4 3 0 
+
+Sparse Matrix new C, Column major Order
+8 0 0 4 0 4 0 0 0 2 2 0 
+2 0 1 0 3 3 0 3 0 0 0 1 
+0 2 0 0 4 0 2 1 4 0 2 0 
+0 0 0 0 0 1 0 0 3 0 3 0 
+1 0 0 0 0 2 0 0 0 0 1 2 
+4 3 0 0 3 2 1 2 2 0 5 2 
+4 1 0 1 1 1 0 8 1 0 3 7 
+8 1 0 0 1 0 0 4 1 0 2 5 
+4 0 0 4 2 3 0 3 0 0 0 3 
+0 0 0 0 3 2 0 4 1 0 0 0 
+4 0 0 2 2 0 0 1 0 0 1 5 
+2 0 0 3 4 4 3 0 0 0 3 5 
+2 0 0 0 0 1 0 0 2 0 2 4 
+4 0 0 1 4 0 4 4 0 0 7 3 
+8 4 0 1 3 0 0 1 5 0 0 0 
+
+new value: 8 15 0 
+
+Sparse Matrix new C, Row major Order 
+8 2 0 0 1 4 4 8 4 0 4 2 2 4 8 
+0 0 2 0 0 3 1 1 0 0 0 0 0 0 4 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4 0 0 0 0 0 1 0 4 0 2 3 0 1 1 
+0 3 4 0 0 3 1 1 2 3 2 4 0 4 3 
+4 3 0 1 2 2 1 0 3 2 0 4 1 0 0 
+0 0 2 0 0 1 0 0 0 0 0 3 0 4 0 
+0 3 1 0 0 2 8 4 3 4 1 0 0 4 0 
+0 0 4 3 0 2 1 1 0 1 0 0 2 0 5 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2 0 2 3 1 5 3 2 0 0 1 3 2 7 0 
+0 1 0 0 2 2 7 5 3 0 5 5 4 3 0 
+
+Sparse Matrix new C, Column major Order
+8 0 0 4 0 4 0 0 0 2 2 0 
+2 0 1 0 3 3 0 3 0 0 0 1 
+0 2 0 0 4 0 2 1 4 0 2 0 
+0 0 0 0 0 1 0 0 3 0 3 0 
+1 0 0 0 0 2 0 0 0 0 1 2 
+4 3 0 0 3 2 1 2 2 0 5 2 
+4 1 0 1 1 1 0 8 1 0 3 7 
+8 1 0 0 1 0 0 4 1 0 2 5 
+4 0 0 4 2 3 0 3 0 0 0 3 
+0 0 0 0 3 2 0 4 1 0 0 0 
+4 0 0 2 2 0 0 1 0 0 1 5 
+2 0 0 3 4 4 3 0 0 0 3 5 
+2 0 0 0 0 1 0 0 2 0 2 4 
+4 0 0 1 4 0 4 4 0 0 7 3 
+8 4 0 1 3 0 0 0 5 0 0 0 
+
+new value: 12 1 8 
+Not Existing Element 12 1
+
+Sparse Matrix new C, Row major Order 
+8 2 0 0 1 4 4 8 4 0 4 2 2 4 8 
+0 0 2 0 0 3 1 1 0 0 0 0 0 0 4 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4 0 0 0 0 0 1 0 4 0 2 3 0 1 1 
+0 3 4 0 0 3 1 1 2 3 2 4 0 4 3 
+4 3 0 1 2 2 1 0 3 2 0 4 1 0 0 
+0 0 2 0 0 1 0 0 0 0 0 3 0 4 0 
+0 3 1 0 0 2 8 4 3 4 1 0 0 4 0 
+0 0 4 3 0 2 1 1 0 1 0 0 2 0 5 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2 0 2 3 1 5 3 2 0 0 1 3 2 7 0 
+8 1 0 0 2 2 7 5 3 0 5 5 4 3 0 
+
+Sparse Matrix new C, Column major Order
+8 0 0 4 0 4 0 0 0 2 2 8 
+2 0 1 0 3 3 0 3 0 0 0 1 
+0 2 0 0 4 0 2 1 4 0 2 0 
+0 0 0 0 0 1 0 0 3 0 3 0 
+1 0 0 0 0 2 0 0 0 0 1 2 
+4 3 0 0 3 2 1 2 2 0 5 2 
+4 1 0 1 1 1 0 8 1 0 3 7 
+8 1 0 0 1 0 0 4 1 0 2 5 
+4 0 0 4 2 3 0 3 0 0 0 3 
+0 0 0 0 3 2 0 4 1 0 0 0 
+4 0 0 2 2 0 0 1 0 0 1 5 
+2 0 0 3 4 4 3 0 0 0 3 5 
+2 0 0 0 0 1 0 0 2 0 2 4 
+4 0 0 1 4 0 4 4 0 0 7 3 
+8 4 0 1 3 0 0 0 5 0 0 0 
+
+new value: 12 7 0 
+
+Sparse Matrix new C, Row major Order 
+8 2 0 0 1 4 4 8 4 0 4 2 2 4 8 
+0 0 2 0 0 3 1 1 0 0 0 0 0 0 4 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4 0 0 0 0 0 1 0 4 0 2 3 0 1 1 
+0 3 4 0 0 3 1 1 2 3 2 4 0 4 3 
+4 3 0 1 2 2 1 0 3 2 0 4 1 0 0 
+0 0 2 0 0 1 0 0 0 0 0 3 0 4 0 
+0 3 1 0 0 2 8 4 3 4 1 0 0 4 0 
+0 0 4 3 0 2 1 1 0 1 0 0 2 0 5 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2 0 2 3 1 5 3 2 0 0 1 3 2 7 0 
+8 1 0 0 2 2 0 5 3 0 5 5 4 3 0 
+
+Sparse Matrix new C, Column major Order
+8 0 0 4 0 4 0 0 0 2 2 8 
+2 0 1 0 3 3 0 3 0 0 0 1 
+0 2 0 0 4 0 2 1 4 0 2 0 
+0 0 0 0 0 1 0 0 3 0 3 0 
+1 0 0 0 0 2 0 0 0 0 1 2 
+4 3 0 0 3 2 1 2 2 0 5 2 
+4 1 0 1 1 1 0 8 1 0 3 0 
+8 1 0 0 1 0 0 4 1 0 2 5 
+4 0 0 4 2 3 0 3 0 0 0 3 
+0 0 0 0 3 2 0 4 1 0 0 0 
+4 0 0 2 2 0 0 1 0 0 1 5 
+2 0 0 3 4 4 3 0 0 0 3 5 
+2 0 0 0 0 1 0 0 2 0 2 4 
+4 0 0 1 4 0 4 4 0 0 7 3 
+8 4 0 1 3 0 0 0 5 0 0 0 
+
+new value: 12 15 8 
+Not Existing Element 12 15
+
+Sparse Matrix new C, Row major Order 
+8 2 0 0 1 4 4 8 4 0 4 2 2 4 8 
+0 0 2 0 0 3 1 1 0 0 0 0 0 0 4 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4 0 0 0 0 0 1 0 4 0 2 3 0 1 1 
+0 3 4 0 0 3 1 1 2 3 2 4 0 4 3 
+4 3 0 1 2 2 1 0 3 2 0 4 1 0 0 
+0 0 2 0 0 1 0 0 0 0 0 3 0 4 0 
+0 3 1 0 0 2 8 4 3 4 1 0 0 4 0 
+0 0 4 3 0 2 1 1 0 1 0 0 2 0 5 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2 0 2 3 1 5 3 2 0 0 1 3 2 7 0 
+8 1 0 0 2 2 0 5 3 0 5 5 4 3 8 
+
+Sparse Matrix new C, Column major Order
+8 0 0 4 0 4 0 0 0 2 2 8 
+2 0 1 0 3 3 0 3 0 0 0 1 
+0 2 0 0 4 0 2 1 4 0 2 0 
+0 0 0 0 0 1 0 0 3 0 3 0 
+1 0 0 0 0 2 0 0 0 0 1 2 
+4 3 0 0 3 2 1 2 2 0 5 2 
+4 1 0 1 1 1 0 8 1 0 3 0 
+8 1 0 0 1 0 0 4 1 0 2 5 
+4 0 0 4 2 3 0 3 0 0 0 3 
+0 0 0 0 3 2 0 4 1 0 0 0 
+4 0 0 2 2 0 0 1 0 0 1 5 
+2 0 0 3 4 4 3 0 0 0 3 5 
+2 0 0 0 0 1 0 0 2 0 2 4 
+4 0 0 1 4 0 4 4 0 0 7 3 
+8 4 0 1 3 0 0 0 5 0 0 8 
