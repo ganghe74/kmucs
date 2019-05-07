@@ -1,5 +1,5 @@
+# 수치해석 선택형과제
 import copy
-
 
 def take_input():
     """Accepts the size of the chess board"""
@@ -58,7 +58,7 @@ def is_safe(board, row, col, size):
     return True
 
 
-def solve(board, col, size):
+def dfs(board, col, size):
     # 기저 사례, 더이상 탐색이 불가능하므로 탐색을 중지한다.
     if col >= size: 
         return
@@ -74,14 +74,32 @@ def solve(board, col, size):
                 board[i][col] = 0
                 return
             # 다음 단계로 탐색을 진행한다.
-            solve(board, col + 1, size)
+            dfs(board, col + 1, size)
             # board[i][col]에 대한 탐색이 끝났으므로 퀸을 다시 뺀다.
             board[i][col] = 0
-    
-def bfs(board, col, size):
-    queue = [board]
-    while len(queue) > 0:
-        pass
+
+# queue 모듈을 불러옴
+import queue
+
+def bfs(board, size):
+    # 큐를 선언한다.
+    # 처음 큐에는 텅 빈 baord와 퀸의 개수를 알려주는 0이 들어있다.
+    Q = queue.Queue()
+    Q.put((board, 0))
+    # 큐가 빌때까지 진행 (모든 경우의수를 탐색할때까지)
+    while Q.qsize() > 0:
+        board, col = Q.get()
+        # 만약 size개의 퀸이 있으면 정답임
+        if col == size:
+            add_solution(board)
+            continue
+        # 모든 열에 놓는 경우의 수를 고려하기 위한 반복문
+        for i in range(size):
+            # board[i]][col]에 놓는게 가능하다면 큐에 넣는다
+            if is_safe(board, i, col, size):
+                next_board = copy.deepcopy(board)
+                next_board[i][col] = 1
+                Q.put((next_board, col+1))
         
 
 
@@ -99,6 +117,7 @@ board = get_board(size)
 solutions = []
 
 solve(board, 0, size)
+#bfs(board, size)
 
 print_solutions(solutions, size)
 
