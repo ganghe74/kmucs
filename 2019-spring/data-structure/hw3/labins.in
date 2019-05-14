@@ -1,0 +1,33 @@
+ins 20 1
+ins 20 1
+get 20
+ins 10 2
+get 10
+ins 40 3
+ins 6 4
+ins 15 5
+get 10
+ins 30 6
+ins 2 7
+ins 2 7
+ins 8 8
+ins 25 9
+get 30
+ins 35 10
+ins 7 11
+ins 18 12
+ins 7 13
+ins 35 14
+get 15
+get 10
+ins 40 15
+get 40
+get 35
+ins 15 16
+get 20
+ins 10 17
+get 7
+get 15
+ins 20 18
+get 2
+quit
