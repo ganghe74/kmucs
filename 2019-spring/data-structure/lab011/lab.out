@@ -1,0 +1,93 @@
+Runs : 2 5 4 7 9 
+Merging 2 4
+Merging 5 6
+Merging 7 9
+Merging 11 16
+Runs : 14 3 6 9 
+Merging 3 6
+Merging 9 9
+Merging 14 18
+Runs : 1 2 3 4 
+Merging 1 2
+Merging 3 3
+Merging 4 6
+Runs : 1 2 5 7 40 3 5 19 6 32 9 10 11 13 17 18 19 20 
+Merging 1 2
+Merging 3 3
+Merging 5 5
+Merging 6 6
+Merging 7 9
+Merging 10 10
+Merging 11 12
+Merging 13 16
+Merging 17 18
+Merging 19 19
+Merging 20 20
+Merging 23 29
+Merging 32 35
+Merging 38 40
+Merging 40 52
+Merging 67 78
+Merging 92 145
+Runs : 12 13 17 3 4 14 15 16 2 27 5 6 7 8 9 10 11 18 9 20 1 2 23 
+Merging 1 2
+Merging 2 3
+Merging 3 4
+Merging 5 5
+Merging 6 7
+Merging 7 8
+Merging 9 9
+Merging 10 10
+Merging 11 12
+Merging 13 13
+Merging 14 15
+Merging 15 16
+Merging 17 18
+Merging 18 20
+Merging 20 23
+Merging 23 26
+Merging 27 29
+Merging 31 35
+Merging 38 43
+Merging 49 56
+Merging 66 81
+Merging 105 147
+Runs : 1 2 9 2 32 2 35 4 7 9 8 6 3 5 7 12 32 3 4 1 6 
+Merging 1 1
+Merging 2 2
+Merging 2 2
+Merging 3 3
+Merging 4 4
+Merging 4 4
+Merging 5 6
+Merging 6 6
+Merging 7 7
+Merging 8 8
+Merging 8 9
+Merging 9 11
+Merging 12 12
+Merging 14 16
+Merging 17 20
+Merging 24 30
+Merging 32 32
+Merging 35 37
+Merging 54 64
+Merging 72 118
+Runs : 11 3 15 7 9 2 14 6 18 10 
+Merging 2 3
+Merging 5 6
+Merging 7 9
+Merging 10 11
+Merging 11 14
+Merging 15 16
+Merging 18 21
+Merging 25 31
+Merging 39 56
+Runs : 10 1 7 3 
+Merging 1 3
+Merging 4 7
+Merging 10 11
+Runs : 2 3 4 8 
+Merging 2 3
+Merging 4 5
+Merging 8 9
