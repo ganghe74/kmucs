@@ -15,6 +15,7 @@ Infix form -> Postfix form
 Linked Stack이 Array Stack보다 좋은점
 
 Array Tree 가 있다 index i 노드의 부모, 왼쪽자식, 오른쪽자식 계산방법을 말하라.
+
 BST가 있다. 다음 원소들을 순서대로 삭제한 뒤 BST를 그리시오. (차수 2인 원소를 지울때는 왼쪽에서 가장큰원소로 대신한다.)
 
 DFS 스패닝 트리 그리기 (낮은 정점부터 방문)
