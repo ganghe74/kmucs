@@ -1,6 +1,6 @@
 # 2019 Fall
 - System Software
-- Statistics
+- Applied Statistics
 - Discrete Mathematics
 - Computer Architecture
-- File Structure
+- File Processing
