@@ -4,6 +4,12 @@
 \usepackage{amsmath, amssymb}
 \usepackage{enumerate}
 \usepackage{graphicx}
+% \usepackage{tikz}
+% \addtolength{\oddsidemargin}{-.875in}
+% \addtolength{\evensidemargin}{-.875in}
+% \addtolength{\textwidth}{1.75in}
+% \addtolength{\topmargin}{-.875in}
+% \addtolength{\textheight}{1.75in}
 
 \title{응용통계학 4장 연습문제 풀이}
 \author{20181653 이강희}
@@ -20,35 +26,44 @@
 
 \section*{11번}
 \begin{enumerate}[(1)]
+    \setlength\abovedisplayskip{0pt}
     \item
-    \begin{flalign*}[t]
+    \begin{minipage}[t]{\linewidth}
+    \vspace{-\baselineskip}
+    \begin{flalign*}
         P(X<4) &= \int_2^4 f(x) dx&\\
         &= \int_2^4 \frac{2(1+x)}{27} dx\\
         &= \left[\frac{2}{27}x + \frac{1}{27}x^2 \right]_2^4\\
         &= \frac{8}{27} + \frac{16}{27} - \left(\frac{4}{27} + \frac{4}{27}\right) = \frac{16}{27}
     \end{flalign*}
+    \end{minipage}
     \item
-    \begin{align}
-        P(X<4) &= \int_2^4 f(x) dx&\\
-        &= \int_2^4 \frac{2(1+x)}{27} dx\\
-        &= \left[\frac{2}{27}x + \frac{1}{27}x^2 \right]_2^4\\
-        &= \frac{8}{27} + \frac{16}{27} - \left(\frac{4}{27} + \frac{4}{27}\right) = \frac{16}{27}
-    \end{align}
+    \begin{minipage}[t]{\linewidth}
+    \vspace{-\baselineskip}
+    \begin{flalign*}
+        P(3<X<4) &= \int_3^4 f(x) dx&\\
+        &= \int_3^4 \frac{2(1+x)}{27} dx\\
+        &= \left[\frac{2}{27}x + \frac{1}{27}x^2 \right]_3^4\\
+        &= \frac{8}{27} + \frac{16}{27} - (\frac{6}{27} + \frac{9}{27}) = \frac{1}{3}
+    \end{flalign*}
+    \end{minipage}
 \end{enumerate}
-
-\section*{28번}
-선수 중 왼손잡이의 비율이 35\% 이므로\\
-임의로 한 선수를 선택했을 때 그 선수가 왼손잡이일 확률을 \(P(A) = 0.35 \) 라 한다.\\
-오른손잡이일 확률은 \(P(A^C) = 0.65 \) 이다. (양손잡이는 고려하지 않음)
-\begin{enumerate}[(1)]
-    \item
-    두 선수 모두 왼손잡이일 확률은 \(P(A) \times P(A) =  0.1225 \) 이다.
-    \item
-    한 선수는 왼손잡이, 한 선수는 오른손잡이일 확률은\\
-    \(P(A) \times P(A^C) = 0.35 \times 0.65 = 0.2275 \) 이다.
-    \item
-    적어도 한 선수는 오른손잡이일 확률은 모두 왼손잡이일 확률의 여집합이므로\\
-    \(1 - P(A) \times P(A) = 1 - 0.1225 = 0.8775 \) 이다.
-\end{enumerate}
+\section*{26번}
+\begin{flalign*}
+    E(X) &= \int_{0}^{\infty} x \frac{1}{4}e^{\frac{-x}{4}} dx&\\
+    &= \left[-xe^{-\frac{x}{4}} - 4e^{-\frac{x}{4}} \right]_{0}^{\infty}\\
+    &=4\\
+\end{flalign*}
+\begin{flalign*}
+    E(X^2) &= \int_{0}^{\infty} x^2 \frac{1}{4}e^{-\frac{x}{4}} dx&\\
+    &= \left[-e^{-\frac{x}{4}}(x^2+8x+32) \right]_{0}^{\infty}\\
+    &=32\\
+\end{flalign*}
+\begin{flalign*}
+    \sigma_x^2 &= E(X^2) - E(X)^2&\\
+    &= 32 - 4^2 = 16
+\end{flalign*}
+Y의 평균은 \(E(Y) = E(3X-2) = 3E(X)-2 = 10\)\\
+Y의 분산은 \(\sigma_y^2 = \sigma_{3x-2}^{2} = 3^2\sigma_x^2\) = 144
 
 \end{document}
