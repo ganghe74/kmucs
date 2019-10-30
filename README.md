@@ -1,3 +1,3 @@
-# Kookmin Univ. Software. Curriculum
+# KMUCS
 
-My Class Repository
+전공수업 정리용 저장소
