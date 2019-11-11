@@ -1,0 +1,8 @@
+# latex temp file
+*.aux
+*.log
+*.synctex.gz
+_minted*
+
+# compiled binary file
+run
