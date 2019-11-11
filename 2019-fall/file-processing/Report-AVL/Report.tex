@@ -1,0 +1,31 @@
+\documentclass[10pt]{article}
+\usepackage[cjk]{kotex}
+\usepackage[top=1.5cm, bottom=2cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{enumerate}
+\usepackage{minted}
+\usepackage{listings}
+
+\usemintedstyle{perldoc}
+
+\title{화일처리 보고서\\AVL 트리}
+\author{20181653 이강희}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+강의 슬라이드를 참조하였습니다.
+\end{center}
+
+\newpage
+
+\section{출력 결과}
+
+\lstinputlisting[frame=tb, caption=output.txt]{output.txt}
+
+\section{소스 코드}
+
+\inputminted{cpp}{main.cpp}
+
+\end{document}
